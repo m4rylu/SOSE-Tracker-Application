@@ -30,7 +30,7 @@ spring:
               predicates:
               - Path=/api/weather/**
               filters:
-              - RewritePath=/api/weather/openapi, /swagger-ui/index.html
+              - RewritePath=/api/weather/openapi, /v3/api-docs/openapi
               - RewritePath=/api/weather/(?<segment>.*), /WeatherTrackerRESTSpring/${segment}
 
             - id: advice-coffee
